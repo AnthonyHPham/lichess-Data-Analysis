@@ -45,6 +45,7 @@ def process_winning_first_moves():
         first_moves_results[key] = calc_average_win_percentage(first_moves_results[key])
 
     first_moves_results = {k: v for k, v in sorted(first_moves_results.items(), key=lambda item: item[1], reverse=True)}
+    pgn_file.close()
     return first_moves_results
 
 
