@@ -2,6 +2,13 @@ import chess.pgn
 import matplotlib.pyplot as plt
 import numpy as np
 
+"""
+Created by Anthony Ha-Anh Pham on July 16, 2020
+
+This program was designed to graphically display White's win percentage
+based on only their first move.
+"""
+
 pgn_file = open("lichess_db_standard_rated_2014-11.pgn")
 
 
