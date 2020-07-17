@@ -14,7 +14,6 @@ def process_winning_first_moves():
 
     game = chess.pgn.read_game(pgn_file)
     game_number = 0
-    print("Processing games...")
 
     while game is not None:
         moves = game.mainline_moves().__str__().split(" ")
@@ -34,8 +33,6 @@ def process_winning_first_moves():
 
         game = chess.pgn.read_game(pgn_file)
         game_number += 1
-        if game_number % 1000 == 0:
-            print(f"Now on game {game_number}/1,209,291 ({float(game_number)/1209291*100}%)")
 
     for key in first_moves_results:
         first_moves_results[key] = calc_average_win_percentage(first_moves_results[key])
@@ -46,7 +43,6 @@ def process_winning_first_moves():
 
 def plot_winning_percentages():
     first_moves_results = process_winning_first_moves()
-    print("Beginning plotting process")
     x_labels = list(first_moves_results.keys())
     y_values = list(first_moves_results.values())
     x_values = list(range(1, len(x_labels) + 1))
