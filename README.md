@@ -17,7 +17,7 @@ I will be analyzing the following: ELO of both players, moves played, final scor
 
 The data, used either individually or in conjunction with each other, will be or have been used to figure out the following:
  - White's chance of winning based on their first move ([DONE](https://github.com/AnthonyHPham/lichess-Data-Analysis/blob/master/Programs/WinningFirstMoves.py))
- - Black's chance of winning based on their response to White's first move
+ - Black's chance of winning based on their response to White's first move ([IN PROGRESS](https://github.com/AnthonyHPham/lichess-Data-Analysis/blob/master/Programs/WinningResponseMoves.py))
  - Number of games won by checkmate/resignation or time
  - Number of captures between a certain range of moves (such as from move 10 to 20, or even the entire game)
  - Most and least popular openings
