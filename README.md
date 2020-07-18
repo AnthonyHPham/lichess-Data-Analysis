@@ -1,5 +1,5 @@
-# lichess-Data-Analysis
-A collection of various programs that display random statistics using lichess' public game database
+# What is this?
+It is simply a collection of various programs that display random statistics using lichess' public game database
 
 ### Databases Used and Output
 You can find the databases that were used at https://database.lichess.org/. The programs will be using the large database. The large database has 1.2 million games stored and is listed under November 2014. 
@@ -25,6 +25,6 @@ The data, used either individually or in conjunction with each other, will be or
  - Chance of an upset (person A beats person B where person B has at least 100 more ELO points than person A)
  - Chance of a walkover (person A beats person B where person B has at least 100 less ELO points than person A)
  - Number of times a specific piece has been moved
- - Popularity of time controls
+ - Popularity of time controls (will use other databases)
  
  Please note that this is not a final list of what I want to figure out with the data!
