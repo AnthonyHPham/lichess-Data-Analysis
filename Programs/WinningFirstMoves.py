@@ -4,6 +4,7 @@ import numpy as np
 
 """
 Created by Anthony Ha-Anh Pham on July 16, 2020
+Completed July 16, 2020
 
 This program was designed to graphically display White's win percentage
 based on only their first move.
