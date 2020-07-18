@@ -16,7 +16,7 @@ So far, these are the only modules you will need to import for the programs to w
 I will be analyzing the following: ELO of both players, moves played, final score, openings used, color of the player, and time control.
 
 The data, used either individually or in conjunction with each other, will be or have been used to figure out the following:
- - White's chance of winning based on their first move
+ - White's chance of winning based on their first move ([DONE](https://github.com/AnthonyHPham/lichess-Data-Analysis/blob/master/Programs/WinningFirstMoves.py))
  - Black's chance of winning based on their response to White's first move
  - Number of games won by checkmate/resignation or time
  - Number of captures between a certain range of moves (such as from move 10 to 20, or even the entire game)
