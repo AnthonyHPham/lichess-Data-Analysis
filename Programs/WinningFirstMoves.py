@@ -21,7 +21,6 @@ def process_winning_first_moves():
     first_moves_results = {}
 
     game = chess.pgn.read_game(pgn_file)
-    game_number = 0
 
     while game is not None:
         moves = game.mainline_moves().__str__().split(" ")
@@ -40,7 +39,6 @@ def process_winning_first_moves():
             first_moves_results[first_move][2] += 1
 
         game = chess.pgn.read_game(pgn_file)
-        game_number += 1
 
     for key in first_moves_results:
         first_moves_results[key] = calc_average_win_percentage(first_moves_results[key])
