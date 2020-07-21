@@ -2,7 +2,7 @@ import chess.pgn
 import matplotlib.pyplot as plt
 import numpy as np
 
-pgn_game = open("lichess_db_standard_rated_2013-01.pgn")
+pgn_game = open("lichess_db_standard_rated_2014-11.pgn")
 
 """
 Created by Anthony Ha-Anh Pham on July 20, 2020
@@ -28,11 +28,7 @@ def get_loss_distribution():
     loss_distribution = {"White": [0, 0, 0], "Black": [0, 0, 0]}
     game = chess.pgn.read_game(pgn_game)
 
-    games = 0
     while game is not None:
-        games += 1
-        if games % 1000 == 0:
-            print(f"Now on game # {games} out of an estimated 121k")
         key = "White"
         if game.headers["Result"] == "1-0":
             key = "Black"
@@ -50,6 +46,7 @@ def get_loss_distribution():
 
         game = chess.pgn.read_game(pgn_game)
 
+    pgn_game.close()
     loss_distribution["White"] = calculate_loss_percentage(loss_distribution["White"])
     loss_distribution["Black"] = calculate_loss_percentage(loss_distribution["Black"])
     return loss_distribution
