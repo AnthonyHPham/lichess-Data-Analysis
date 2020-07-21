@@ -6,7 +6,7 @@ pgn_file = open("lichess_db_standard_rated_2014-11.pgn")
 
 """
 Created by Anthony Ha-Anh Pham on July 16, 2020
-IN PROGRESS
+Completed July 17, 2020
 
 This program was designed to graphically show Black's win percentage
 based on their move in response to White's first move
