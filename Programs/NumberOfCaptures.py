@@ -15,7 +15,7 @@ the number of captures within ranges of moves
 
 
 def return_number_of_captures_in_range(move_min, move_max, game):
-    moves = re.split("\d+\.+ ", game.mainline_moves().__str__())[1:]
+    moves = re.split(r"\d+\.+ ", game.mainline_moves().__str__())[1:]
 
     if len(moves) > 0:
         if "%" in moves[0]:
@@ -31,7 +31,7 @@ def return_number_of_captures_in_range(move_min, move_max, game):
 
 
 def find_number_of_moves(game):
-    moves = re.split("\d+\.+ ", game.mainline_moves().__str__())[1:]
+    moves = re.split(r"\d+\.+ ", game.mainline_moves().__str__())[1:]
 
     if len(moves) > 0:
         if "%" in moves[0]:
