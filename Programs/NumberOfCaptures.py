@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import re
 import math
 
-pgn_game = open("lichess_db_standard_rated_2014-11.pgn")
+pgn_game = open("example.pgn")
 
 """
 Created by Anthony Ha-Anh Pham on July 22, 2020
